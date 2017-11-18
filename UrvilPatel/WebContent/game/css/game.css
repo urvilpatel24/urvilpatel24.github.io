@@ -1,0 +1,319 @@
+/*Global*/
+body{
+    margin: 0px;
+    padding :0px;
+    background-image: url('../pics/bg.png');
+    font-family:verdana,sans-serif;
+    text-align: center;
+}
+.container{
+    width:90%;
+    margin:auto;
+    overflow: hidden;
+    text-align: center;
+}
+.container_header{
+    width:90%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*Header*/
+header{
+    margin: 0px;
+    padding: 0px;
+}
+header h1{
+    margin: 0px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: orange;
+    font-size: 70px;
+    box-shadow: 0px 0px 10px 0px;
+    background-color: rgba(22,22,22,0.5);
+}
+
+/*Section Header*/
+.container_header .header{
+    margin-top: 3%;
+    padding:50px;
+	color:yellow;
+	font-size: 40px;
+    clear: left;
+    overflow: hidden;
+}
+.container_header .header #pl1{
+    float: left;
+    clear: left;
+}
+.container_header .header #lh{
+    float: left;
+    clear: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.container_header .header #pl2{
+    float: right;
+}
+.container_header .header #rh{
+    float: right;
+    visibility: hidden;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+/*Section*/
+section #lx{
+    clear: left;
+    float: left;
+    width:20%;
+}
+section #ro{
+    float: right; 
+    width:20%;
+}
+section #lx .left_sym{
+	color:yellow;
+	font-size: 65px;
+	font-weight: bold;
+    padding-top:20px; 
+}
+section #ro .rit_sym{
+	color:yellow;
+	font-size: 65px;
+	font-weight: bold;
+    padding-top: 20px; 
+}
+
+
+/*table*/
+section .table{
+    float: left;
+    width: 49%;
+    padding-top: 25px;
+    margin: auto;
+    margin-left: 7%;
+}
+section .table #main_dv {
+    border: none;
+    overflow: hidden;
+}
+section .table .inter_dv {
+    border: none;
+    clear: left;
+    overflow: hidden;
+}
+section .table .inner_most_dv {
+    float: left;
+    border: 2px #222223 solid;
+    height: 160px;
+    width: 32%;
+    color: #366b6b;
+    font-size: 700%;
+    background-color: aqua;
+}
+
+/*msg*/
+#msg{
+    margin: auto;
+    margin-top: -5%;
+	background-color: rgba(11,11,11,0.8);
+	border-radius: 7px;
+	border:none;
+	font-size: 25px;
+	text-align: center;
+	width: 65%;
+	height: 400px;
+	padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+	color:aqua;
+	letter-spacing: 1px;
+    overflow: hidden;
+}
+#msg_bt{
+	height:40px;
+	width:150px;
+	font-size: 23px;
+	background-color: #4B9900;
+	border:none;
+	border-radius:5px;
+	box-shadow: 6px 6px 25px 1px;
+	font-weight: bold;
+    margin-top: 55px;
+}
+
+/*footer*/
+footer{
+    width:100%;
+    position: relative;
+    bottom: 0px;
+    padding: 0px;
+    height:40px;
+    background-color: rgba(22,22,22,0.3);
+    margin-top: 7%;
+}
+footer p{
+    padding-top:13px;
+    color: white;
+    font-size: 13px;
+}
+
+/*Boot Strap*/
+   /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+        #msg{
+            height: 400px;
+        }
+    }
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        #msg{
+            height: 430px;
+        }
+        section .table{
+            padding-top: 85px;
+        }
+        section .table .inner_most_dv {
+            height: 120px;
+            font-size: 570%;
+        }
+    }
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        header h1{
+            font-size: 65px;
+        }
+        
+        .container_header .header{
+            padding: 0px;
+            padding-top: 25px;
+            padding-bottom: 35px;
+        }
+        
+        #msg{
+            margin-top:-15%;
+            height: 480px;
+        }
+        section #lx{
+            float: left;
+            width: 100%;
+            overflow: hidden;
+            clear: left;
+            margin: auto;
+            margin-top: 25px;
+            padding-bottom: 35px;
+        }
+        section #lx .left_sym{
+            float: left;
+            padding-top: 0px;
+            padding-right: 15px;
+        }
+        section #ro{
+            overflow: hidden;
+            float: right;
+            width: 100%;
+            padding-top: 35px;
+            margin: auto;
+            margin-bottom: 35px;
+        }
+        section #ro .rit_sym{
+            float: right;
+            padding-top: 0px;
+            padding-left: 15px;
+        }
+        section .table{
+            float: none;
+            clear: left;
+            width:77%;
+            margin: 0px;
+            margin: auto;
+            padding: 0px;
+        }
+        section .table .inner_most_dv {
+            height: 125px;
+            font-size: 570%;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        #msg{
+            overflow: hidden;
+            height: auto;
+            padding-bottom: 25px;
+        }
+        #msg p{
+            text-align: justify;
+        }
+        header h1{
+            font-size:48px; 
+        }
+        section #lx{
+            width: 100%;
+            margin-top: 25px;
+            padding-bottom: 30px;
+        }
+        section #lx .left_sym{
+            font-size: 53px;
+            padding-right: 10px;
+        }
+        section #ro{
+            width: 100%;
+            padding-top: 25px;
+            margin-bottom: 35px;
+        }
+        section #ro .rit_sym{
+            font-size: 53px;
+            padding-left: 10px;
+        }
+        section .table{
+            width:90%;
+        }
+        section .table .inner_most_dv {
+            height: 100px;
+            font-size: 470%;
+            width:31%;
+        }
+
+        /*Section Header*/
+        .container_header .header{
+            font-size: 24px;
+            padding: 0px;
+            margin-top: 40px;
+        }
+        .container_header .header #lh img{
+            width: 80%;
+        }
+        .container_header .header #rh img{
+            width: 80%;
+        }
+    }
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 315px) {
+        header h1{
+            font-size: 35px;
+        }
+        section #ro .rit_sym{
+            font-size: 35px;
+        }
+        section #lx .left_sym{
+            font-size:35px;
+        }
+        section .table .inner_most_dv {
+            height: 90px;
+        }
+        .container_header .header{
+            font-size: 18px;
+            padding: 0px;
+            margin-top: 40px;
+        }
+        .container_header .header #lh img{
+            width: 60%;
+        }
+        .container_header .header #rh img{
+            width: 60%;
+        }
+    }
