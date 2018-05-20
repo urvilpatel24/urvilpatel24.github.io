@@ -1,0 +1,250 @@
+/*global*/
+body{
+    margin: 0px;
+    padding :0px;
+    background-image: url('../pics/bg.png');
+    font-family:verdana,sans-serif;
+    text-align: center;
+}
+.container{
+    width:90%;
+    margin:auto;
+    padding:5%;
+    overflow: hidden;
+    text-align: center;
+}
+section #mobile{
+    display:none;
+    margin: 0px;
+    padding: 0px;
+}
+section #desktop{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+header{
+    margin: 0px;
+    padding: 0px;
+}
+header h1{
+    margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: orange;
+    font-size: 75px;
+    box-shadow: 0px 0px 10px 0px;
+    background-color: rgba(22,22,22,0.5);
+}
+
+/*section*/
+section .usr {
+    margin-top: 6%;
+    margin-bottom: 3%;
+    width:28%;
+    border: none;
+    background-color: aqua;
+    box-shadow: 2px 2px 25px 0px;
+    color: #366b6b;
+    border-radius: 10px;
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+
+section #button_div{
+    margin-top: 17.5%;
+    float:left;
+    width:44%;
+}
+
+section #usr1 {
+    float:left;
+}
+
+section #usr2 {
+    float: right;
+}
+
+section .usr img {
+    width:140px;
+}
+
+section .usr .pl_label {
+    margin-top: 10px;
+    font-size: 37px;
+    color: #444444;
+}
+
+section .usr .input {
+    margin-top: 15px;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 3px;
+    background-color: #333333;
+    color: orange;
+    border-radius: 4px;
+}
+
+section #button_div #btn {
+    height: 50px;
+    width:50%;
+    font-size: 21px;
+    letter-spacing: 1px;
+    background-color: #4B9900;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 9px 9px 20px 1px;
+    font-weight: bold;
+}
+
+/*footer*/
+footer{
+    width:100%;
+    position: relative;
+    bottom: 0px;
+    padding: 0px;
+    height:40px;
+    background-color: rgba(22,22,22,0.3);
+}
+footer p{
+    padding-top:13px;
+    color: white;
+    font-size: 13px;
+}
+
+/*bootstrap*/
+
+   /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+        header h1{
+            font-size:65px;
+        }
+        
+       section #mobile{
+            display: none;
+        }
+        section .usr img {
+            width:120px;
+        }
+
+        section .usr .pl_label {
+            font-size: 33px;
+        }
+
+        section .usr .input {
+            height: 27px;
+            font-size: 16px;
+        } 
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        header h1{
+            font-size:60px;
+        }
+        
+        section #mobile{
+            display: none;
+        }
+        section .usr img {
+            width:120px;
+        }
+        section .usr .pl_label {
+            font-size: 28px;
+        }
+        section .usr .input {
+            height: 24px;
+            font-size: 14px;
+            width:70%;
+        } 
+        section #button_div{
+            margin-top: 20%;
+        }
+        section #button_div #btn {
+            height: 45px;
+            width:48%;
+            font-size: 19px;
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        header h1{
+            font-size: 55px;
+        }
+        
+        section #desktop{
+            display: none;
+        }
+        section #mobile{
+            display: inline;
+        }
+        section #mobile .usr{
+            width:43%;
+        }
+        section #mobile #usr1{
+            clear: left;
+        }
+        section #mobile #usr2{
+            float:right;
+        }
+        section #mobile .usr img {
+            width:90px;
+        }
+        section #mobile .pl_label {
+            font-size: 24px;
+        }
+        section #mobile .input {
+            height: 20px;
+            font-size: 12px;
+            width:70%;
+        } 
+        section #mobile #button_div{
+            float:none;
+            clear: left;
+            margin-left: 27.5%;
+            margin-top: 0px;
+        }
+        section #mobile #button_div #btn{
+            height: 45px;
+            width:100%;
+            font-size: 17px;
+            margin-top: 30%;
+            letter-spacing: 2px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        header h1{
+            font-size:45px;
+        }
+        section #desktop{
+            display: none;
+        }
+        section #mobile .usr{
+            margin: 0px;
+            width:65%;
+            margin: auto;
+            padding-top: 25px;
+        }
+        section #mobile #usr1{
+            float: none;
+            clear: left;
+            margin-top: 30px;
+        }
+        section #mobile #usr2{
+            float:none;
+            margin-top: 35px;
+        }
+        section #mobile #button_div{
+            margin: auto;
+            width: 80%;
+        }
+    }
+
+    /* Custom, iPhone Retina */ 
+        @media only screen and (max-width : 320px) {
+    }
