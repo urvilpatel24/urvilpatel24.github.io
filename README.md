@@ -1,3 +1,0 @@
-# Urvil Patel
-
-My Portfolio.
