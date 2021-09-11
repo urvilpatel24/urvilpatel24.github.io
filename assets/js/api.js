@@ -10,7 +10,7 @@ function apicall(){
 			document.getElementById("name").value = "";
 			document.getElementById("email").value = "";
 			document.getElementById("message").value = "";
-			document.getElementById("apiReplay").innerHTML = '<center><br><b style="color:green;">Message Sent !</b></center>';
+			document.getElementById("apiReplay").innerHTML = '<center><br><b style="color:red;">Something went wrong !!! Please send me an email at urvilpatel2324@gmail.com</b></center>';
 		}
 	}
 	htp.open("post","http://uaccounting.tk/mailerapi?msg="+msg+"&name="+name+"&email="+email,true);
